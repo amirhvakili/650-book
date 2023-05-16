@@ -15,7 +15,7 @@
                 {
                     try
                     {
-                        Console.WriteLine("Please enter miles here: ");
+                        Console.Write("Please enter miles here: ");
                         this.Miles = float.Parse(Console.ReadLine());
                         if(this.Miles < 0)
                         {
@@ -32,7 +32,7 @@
                 {
                     try
                     {
-                        Console.WriteLine("Please enter feet here: ");
+                        Console.Write("Please enter feet here: ");
                         this.Feet = float.Parse(Console.ReadLine());
                         if (this.Feet < 0)
                         {
@@ -46,13 +46,9 @@
                     }
                 }
             }
-            public float MilesToMetersConversion()
+            public int TotalDistanceInMeters()
             {
-                return this.Miles * Meters_Per_Miles;
-            }
-            public float FeetToMetersConversion()
-            {
-                return this.Feet * Meters_Per_Foot;
+                return (int)(this.Miles * Meters_Per_Miles + this.Feet + Meters_Per_Foot);
             }
         }
     }
