@@ -1,0 +1,31 @@
+﻿using System.Data;
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
+
+namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please write your weight in KILOGRAMS: ");
+                    var weightInKilograms = double.Parse(Console.ReadLine());
+
+                    var p21 = new P21();
+
+                    Console.WriteLine(string.Format("Your weight in grams is {0}", p21.weightInGrams(weightInKilograms)));
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("Please enter a correct input.");
+                }
+            }
+        }
+    }
+}
+

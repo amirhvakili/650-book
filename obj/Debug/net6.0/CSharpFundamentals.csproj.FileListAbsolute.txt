@@ -1,0 +1,15 @@
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\CSharpFundamentals.exe
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\CSharpFundamentals.deps.json
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\CSharpFundamentals.runtimeconfig.json
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\CSharpFundamentals.dll
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\CSharpFundamentals.pdb
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\CSharpFundamentals.csproj.AssemblyReference.cache
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\CSharpFundamentals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\CSharpFundamentals.AssemblyInfoInputs.cache
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\CSharpFundamentals.AssemblyInfo.cs
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\CSharpFundamentals.csproj.CoreCompileInputs.cache
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\CSharpFundamentals.dll
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\refint\CSharpFundamentals.dll
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\CSharpFundamentals.pdb
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\CSharpFundamentals.genruntimeconfig.cache
+C:\Repos\Mosh\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\CSharpFundamentals.dll

@@ -1,0 +1,12 @@
+﻿namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Please enter a number between 10000 and 99999 here: ");
+
+            new P33().ShowDigits();
+        }
+    }
+}

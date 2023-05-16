@@ -1,0 +1,12 @@
+﻿namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("The area of the trapezoid is: {0}", new P37().CalculateArea());
+        }
+    }
+}
+
+

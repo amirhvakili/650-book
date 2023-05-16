@@ -1,0 +1,46 @@
+﻿namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please Enter height, weight, and age of the person respectively and seperate your inputs by comma. Remember you can only enter an integer for age: ");
+                    string[] userInput = Console.ReadLine().Split(',');
+
+                    var numbers = new List<double>();
+
+                    foreach (var item in userInput)
+                    {
+                        if (item != userInput[2])
+                        {
+                            var number = double.Parse(item);
+                            numbers.Add(number);
+                        }
+                        else
+                        {
+                            var number = int.Parse(item);
+                            numbers.Add(number);
+                        }
+                    }
+
+                    var p17 = new P17(numbers[0], numbers[1], numbers[2]);
+
+                    Console.WriteLine(p17.Size_c());
+                    Console.WriteLine(p17.Size_d());
+                    Console.WriteLine(p17.Size_k());
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("Please enter 3 numbers. Make sure age is an integer.");
+                }
+            }
+            
+        }
+    }
+}
+

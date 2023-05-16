@@ -1,0 +1,37 @@
+﻿namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please enter x here: ");
+                    var x = int.Parse(Console.ReadLine());
+
+                    Console.Write("Please enter y here: ");
+                    var y = int.Parse(Console.ReadLine());
+
+                    Console.Write("Please enter z here: ");
+                    var z = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("x + y + z = {0}", new P29().Sum(x, y, z));
+                    Console.WriteLine("x * y * z = {0}", new P29().Multiply(x, y, z));
+                    Console.WriteLine("(x + y + z) / 3 = {0}", new P29().Average(x, y, z));
+                    Console.WriteLine("The max of these three numbers is {0}", new P29().MaxOfThree(x, y, z));
+                    Console.WriteLine("The min of these three numbers is {0}", new P29().MinOfThree(x, y, z));
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("All three numbers must be integers. Please try again.");
+                }
+            }
+            
+        }
+    }
+}
+

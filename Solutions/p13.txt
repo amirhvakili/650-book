@@ -1,0 +1,38 @@
+﻿using CSharpFundamentals;
+
+namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please enter a two digit number: ");
+                    int number = Int32.Parse(Console.ReadLine());
+
+                    if (number >= 10 && number <= 99)
+                    {
+                        Console.WriteLine();
+                        var p13 = new p13(number);
+                        Console.WriteLine(String.Format("Sum of the digits = {0}, number reversed = {1}", p13.Sum(), p13.Reverse()));
+                        break;
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
+
+                }
+                catch
+                {
+                    Console.WriteLine("Wrong Input. Please try again.");
+                }
+            }
+            
+        }
+    }
+}
+

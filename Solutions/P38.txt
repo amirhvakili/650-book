@@ -1,0 +1,17 @@
+﻿namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            // Initializing the class
+            var p38 = new P38();
+
+            Console.WriteLine("The diameter or the circle is: {0}", p38.CalculateDiameter());
+            Console.WriteLine("The circumference of the circle is: {0}", p38.CalculateCircumference());
+            Console.WriteLine("The area of the circle is: {0}", p38.CalculateArea());
+        }
+    }
+}
+
+

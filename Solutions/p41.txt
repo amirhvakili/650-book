@@ -1,0 +1,23 @@
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Text;
+
+namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            //Initializing a and b here
+            var p41 = new P41();
+            
+            Console.WriteLine("a + b = {0}",p41.Sum());
+            Console.WriteLine("a - b = {0}",p41.Subtract());
+            Console.WriteLine("a / b = {0}",p41.Divide());
+            Console.WriteLine("a * b = {0}",p41.Multiply());
+            Console.WriteLine("a^2 + b^2 = {0}",p41.SquareSum());
+            Console.WriteLine("a^3 + b^3 = {0}",p41.CubeSum());
+        }
+    }
+}
+
+

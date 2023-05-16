@@ -1,0 +1,43 @@
+﻿using System.Data;
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
+
+namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please enter r1, r2 and r3. Remember to seperate them by comma: ");
+                    string[] userInput = Console.ReadLine().Split(',');
+
+                    List<double> numbers = new List<double>();
+
+                    foreach (var item in userInput)
+                    {
+                        var number = double.Parse(item);
+                        numbers.Add(number);
+                    }
+
+                    if (numbers.Count != 3)
+                    {
+                        throw new Exception();
+                    }
+
+                    var p20 = new P20();
+                    Console.WriteLine(string.Format("The amount of resistance is {0}", p20.Resistance(numbers[0], numbers[1], numbers[2])));
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
+    }
+}
+

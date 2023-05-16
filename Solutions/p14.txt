@@ -1,0 +1,29 @@
+﻿using CSharpFundamentals;
+
+namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Our function is this: y = 31 * x - 17 * x + 5");
+                    Console.Write("Please enter x (must be an integer) here: ");
+                    int x = Int32.Parse(Console.ReadLine());
+
+                    var p14 = new p14(x);
+                    Console.WriteLine(String.Format("y = {0}", p14.function()));
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("Please enter an integer.");
+                }
+            }
+        }
+    }
+}
+

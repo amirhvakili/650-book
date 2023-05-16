@@ -1,0 +1,13 @@
+﻿namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Please enter numbers from 0 to 10 here in any order you like and seperate them by comma. Remember numbers must be unique and not the same: ");
+            new P32().CreateTable();
+        }
+    }
+}
+
+

@@ -1,0 +1,35 @@
+﻿namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Please enter two integer numbers (x and y) below.");
+                    Console.Write("Please enter x: ");
+                    var x = int.Parse(Console.ReadLine());
+
+                    Console.Write("Please enter y: ");
+                    var y = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine(string.Format("x + y = {0}", new P27().Sum(x, y)));
+                    Console.WriteLine(string.Format("x - y = {0}", new P27().Subtrct(x, y)));
+                    Console.WriteLine(string.Format("x * y = {0}", new P27().Multiply(x, y)));
+                    Console.WriteLine(string.Format("x / y = {0}", new P27().Divide(x, y)));
+                    Console.WriteLine(string.Format("The remainder of x / y is {0}", new P27().Remainder(x, y)));
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("Enter valid values for x and y. Please try again.");
+                }
+            }
+            
+        }
+    }
+}
+

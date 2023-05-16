@@ -1,0 +1,91 @@
+﻿namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please insert only 5 numbers (x, y, z, w, m).");
+            int x, y, z, w, m;
+
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please enter x here: ");
+                    x = int.Parse(Console.ReadLine());
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("Please enter only integer numbers.");
+                }
+            }
+            while (true)
+            {
+
+                try
+                {
+                    Console.Write("Please enter y here: ");
+                    y = int.Parse(Console.ReadLine());
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Please enter only integer numbers.");
+                }
+            }
+
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please enter z here: ");
+                    z = int.Parse(Console.ReadLine());
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Please enter only integer numbers.");
+                }
+            }
+
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please enter w here: ");
+                    w = int.Parse(Console.ReadLine());
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Please enter only integer numbers.");
+                }
+            }
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please enter m here: ");
+                    m = int.Parse(Console.ReadLine());
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Please enter only integer numbers.");
+                }
+
+            }
+
+
+
+            Console.WriteLine("The minimum of these five numbers is: {0}", new P31().MinOfNumbers(x, y, z, w, m));
+            Console.WriteLine("The maximum of these five numbers is: {0}", new P31().MaxOfNumbers(x, y, z, w, m));
+
+        }
+
+
+    }
+}
+
+

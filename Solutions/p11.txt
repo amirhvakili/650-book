@@ -1,0 +1,33 @@
+﻿using CSharpFundamentals;
+
+namespace MyApp // Note: actual namespace depends on the project name.
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Please enter current year's price: ");
+                    var currentYearPrice = double.Parse(Console.ReadLine());
+
+                    Console.Write("Please enter previous year's price: ");
+                    var previousYearPrice = double.Parse(Console.ReadLine());
+                    var p11 = new P11(currentYearPrice, previousYearPrice);
+
+
+
+                    Console.WriteLine(String.Format("CurrentYearPrice: {0}, PreviousYearPrice: {1}, Inflation: {2}, NextYearPrice: {3}", currentYearPrice, previousYearPrice, problem11.Inflation(), problem11.NextYearPrice()));
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("Please enter a number. Try again.");
+                }
+            }
+        }
+    }
+}
+
