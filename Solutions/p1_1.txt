@@ -8,10 +8,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            var p1 = new P1_1();
+            var p1 = new P1();
             Console.WriteLine("The second highest average is {0} and the student's id is {1}",p1.max2,p1.Average[(p1.Average.IndexOf(p1.max2) - 1)]);
         }
     }
 }
-
-
