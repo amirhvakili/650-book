@@ -8,7 +8,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-
+            var project2 = new Project2();
+            Console.WriteLine("Digits are {0}", project2.Digits());
         }
     }
 }
