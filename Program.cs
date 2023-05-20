@@ -8,8 +8,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            var p50 = new P50();
-            Console.WriteLine(p50.BetweenZeroAndNine());
+            var p51 = new P51();
+            Console.WriteLine("Z = {0}", p51.Z());
         }
     }
 }
