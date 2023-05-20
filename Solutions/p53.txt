@@ -8,7 +8,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            
+            var p53 = new P53();
+            p53.ReversingValues();
+            Console.WriteLine("x = {0} and y = {1}", p53.x, p53.y);
         }
     }
 }
