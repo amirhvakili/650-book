@@ -6,7 +6,6 @@
         {
             public P5()
             {
-
                 var birthday = new DateTime(1348, 10, 04);
                 var now = new DateTime(1396, 08, 28);
                 var timespan = now - birthday;

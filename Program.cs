@@ -8,7 +8,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            var p5 = new P5();
+            var p6 = new P6();
         }
     }
 }
