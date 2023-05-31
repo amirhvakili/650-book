@@ -2,9 +2,9 @@
 {
     partial class Program
     {
-        public class P13
+        public class P13_1
         {
-            public P13()
+            public P13_1()
             {
                 long number = Convert.ToInt64 (Console.ReadLine());
 
