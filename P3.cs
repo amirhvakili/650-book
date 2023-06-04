@@ -13,12 +13,12 @@
                 Console.Write("Please enter N here: ");
                 var n = Convert.ToInt32(Console.ReadLine());
 
-                if(n == 1)
+                if (n == 1)
                 {
                     Console.Write("The first N numbers of the fibunacci series are as follows: ");
                     Console.WriteLine(first);
                 }
-                else if(n == 2)
+                else if (n == 2)
                 {
                     Console.Write("The first N numbers of the fibunacci series are as follows: ");
                     Console.Write(first + " ");

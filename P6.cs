@@ -4,7 +4,7 @@
     {
         public class P6
         {
-            public P6 ()
+            public P6()
             {
                 string response;
                 do

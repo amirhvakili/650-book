@@ -10,10 +10,10 @@
 
                 Console.Write("Please enter x here: ");
                 int x = Convert.ToInt32(Console.ReadLine());
-                
+
                 float sum = 0;
 
-                for(var i = 1; i <= 10; i++)
+                for (var i = 1; i <= 10; i++)
                 {
                     sum += i * (float)Math.Pow(x, i);
 

@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace MyApp // Note: actual namespace depends on the project name.
+﻿namespace MyApp // Note: actual namespace depends on the project name.
 {
     partial class Program
     {
@@ -11,7 +9,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 Console.Write("How many numbers do you want to check: ");
                 var n = Convert.ToInt64(Console.ReadLine());
 
-                for(var i = 0; i < n; i++)
+                for (var i = 0; i < n; i++)
                 {
                     Console.Write("Enter number: ");
                     var number = Convert.ToInt64(Console.ReadLine());
@@ -19,13 +17,13 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     var temp = number;
                     long sum = 0;
 
-                    while(temp > 0)
+                    while (temp > 0)
                     {
                         sum += temp % 10;
                         temp /= 10;
                     }
 
-                    if(sum % 9 == 0)
+                    if (sum % 9 == 0)
                         Console.WriteLine(number);
                 }
             }

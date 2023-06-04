@@ -1,7 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-
-namespace MyApp // Note: actual namespace depends on the project name.
+﻿namespace MyApp // Note: actual namespace depends on the project name.
 {
     partial class Program
     {
@@ -18,10 +15,10 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 long temp = m;
                 long sum = 0;
 
-                for(var i = 1; i < n; i++)
+                for (var i = 1; i < n; i++)
                 {
                     sum = 0;
-                    
+
                     for (var j = 1; j <= m; j++)
                     {
                         sum += temp;

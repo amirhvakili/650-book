@@ -14,9 +14,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 float salesmansMoney = 0f;
                 long totalSales = 0;
 
-                for(var i = 0; i < numberOfProducts; i++)
+                for (var i = 0; i < numberOfProducts; i++)
                 {
-                    Console.Write("Please enter the {0} product's degree: ", (i+1).ToOrdinalWords());
+                    Console.Write("Please enter the {0} product's degree: ", (i + 1).ToOrdinalWords());
                     var degree = Convert.ToByte(Console.ReadLine());
 
                     Console.Write("Please enter the price of the product here: ");
@@ -32,16 +32,16 @@ namespace MyApp // Note: actual namespace depends on the project name.
                     switch (degree)
                     {
                         case 1:
-                            if(numberOfItemSold <= 1000000)
+                            if (numberOfItemSold <= 1000000)
                                 salesmansMoney += (float)0.06 * totalSalesOfTheItem;
-                            else if(numberOfItemSold > 1000000 && numberOfItemSold < 2000000)
+                            else if (numberOfItemSold > 1000000 && numberOfItemSold < 2000000)
                                 salesmansMoney += (float)0.07 * totalSalesOfTheItem;
                             else
                                 salesmansMoney += (float)0.1 * totalSalesOfTheItem;
                             break;
 
                         case 2:
-                            if(numberOfItemSold < 100000)
+                            if (numberOfItemSold < 100000)
                                 salesmansMoney += (float)0.04 * totalSalesOfTheItem;
                             else
                                 salesmansMoney += (float)0.06 * totalSalesOfTheItem;

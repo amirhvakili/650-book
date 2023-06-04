@@ -12,14 +12,14 @@
                     var number = Convert.ToInt32(Console.ReadLine());
                     var sum = 0;
 
-                    for(var i = 1; i < number; i++)
+                    for (var i = 1; i < number; i++)
                     {
-                        if(number % i == 0)
+                        if (number % i == 0)
                         {
                             sum += i;
                         }
                     }
-                    if(sum == number)
+                    if (sum == number)
                     {
                         Console.WriteLine("Perfected");
                         Console.Write("Do you want to continue? (Please answer with yes or no) ");
@@ -40,7 +40,7 @@
                         Console.Write("Do you want to continue? (Please answer with yes or no) ");
 
                         var response = Console.ReadLine();
-                        if(response.ToLower() == "no")
+                        if (response.ToLower() == "no")
                         {
                             break;
                         }

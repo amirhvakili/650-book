@@ -8,9 +8,9 @@
             {
                 var counter = 7;
 
-                for(var i = 1; i <= 7; i++)
+                for (var i = 1; i <= 7; i++)
                 {
-                    for(var j = counter; j > 0; j--)
+                    for (var j = counter; j > 0; j--)
                     {
                         Console.Write(j + " ");
                     }

@@ -12,11 +12,11 @@
 
                 //Calculating Years
                 int years;
-                if(now.Month <= birthday.Month)
+                if (now.Month <= birthday.Month)
                     years = now.Year - birthday.Year - 1;
                 else
-                   years = now.Year - birthday.Year;
-               
+                    years = now.Year - birthday.Year;
+
                 //Calculating Months
                 int months;
                 if (now.Month <= birthday.Month)

@@ -6,7 +6,7 @@
         {
             public P12()
             {
-                
+
                 int x;
                 int y;
                 var result = 0;
@@ -15,7 +15,7 @@
                 {
                     Console.Write("Enter your first number here: ");
                     x = Convert.ToInt32(Console.ReadLine());
-                    
+
                     Console.Write("Enter your second number here: ");
                     y = Convert.ToInt32(Console.ReadLine());
 

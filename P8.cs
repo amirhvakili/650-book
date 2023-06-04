@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Reflection.Metadata.Ecma335;
-
-namespace MyApp // Note: actual namespace depends on the project name.
+﻿namespace MyApp // Note: actual namespace depends on the project name.
 {
     partial class Program
     {
@@ -17,7 +14,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
                 Console.Write("Please enter your second number here: ");
                 float y = Convert.ToSingle(Console.ReadLine());
-                
+
                 Console.Write("Please enter your third number here: ");
                 float z = Convert.ToSingle(Console.ReadLine());
 

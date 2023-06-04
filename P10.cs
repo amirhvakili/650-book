@@ -15,7 +15,7 @@
                 Console.Write("Please enter the number of years here: ");
                 var numberOfYears = Convert.ToInt32(Console.ReadLine());
 
-                for(var i = 1; i <= numberOfYears ; i++)
+                for (var i = 1; i <= numberOfYears; i++)
                 {
                     price += (int)(price * inflationRate);
                     Console.WriteLine("The price of the product in {0} years from now is {1}", i, price);

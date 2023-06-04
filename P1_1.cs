@@ -15,23 +15,23 @@
                 this.n = Convert.ToInt32(Console.ReadLine());
                 this.Average = new List<float>();
 
-                for(var i = 0; i < this.n; i++)
+                for (var i = 0; i < this.n; i++)
                 {
                     Console.Write("Enter id: ");
                     var id = Convert.ToInt32(Console.ReadLine());
-                    
+
                     Console.Write("Enter average: ");
                     var average = Convert.ToSingle(Console.ReadLine());
 
                     Average.Add(id);
                     Average.Add(average);
 
-                    if(average > max1)
+                    if (average > max1)
                     {
                         max2 = max1;
                         max1 = average;
                     }
-                    else if(average > max2 && average < max1)
+                    else if (average > max2 && average < max1)
                     {
                         max2 = average;
                     }

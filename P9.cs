@@ -7,9 +7,9 @@
             public P9()
             {
                 Console.Write("Please enter the number of employees here: ");
-                var numberOfEmployees = Convert.ToInt32 (Console.ReadLine());
+                var numberOfEmployees = Convert.ToInt32(Console.ReadLine());
 
-                for(var i = 0; i < numberOfEmployees; i++)
+                for (var i = 0; i < numberOfEmployees; i++)
                 {
                     Console.Write("Please enter employee's ID here: ");
                     var id = Convert.ToInt32(Console.ReadLine());

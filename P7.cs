@@ -17,7 +17,7 @@
                     Console.Write("Do you want to continue: ");
                     response = Console.ReadLine().ToLower();
                 }
-                while(response == "yes");
+                while (response == "yes");
             }
         }
     }
