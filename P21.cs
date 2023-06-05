@@ -6,7 +6,6 @@
         {
             public P21()
             {
-
                 while(true)
                 {
                     Console.Write("Please enter a key on your keyboard: ");
